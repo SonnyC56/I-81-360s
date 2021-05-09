@@ -1,0 +1,24 @@
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>A.M.E. Zion Church</title>
+	<meta aframe-injected="" name="mobile-web-app-capable" content="yes">
+	<meta aframe-injected="" name="theme-color" content="black">
+	<script src="https://www.danpacheco.co/aframe/dist/aframe-v1.0.4.min.js"></script>
+</head>
+    <body>
+        <a-scene class="edith-pano-scene" debug="" embedded="" vr-mode-ui="enabled:false" inspector="" keyboard-shortcuts="" screenshot="">
+    
+            <a-camera id="edith-pano-camera" look-controls="reverseMouseDrag:true;reverseTouchDrag:true;enabled:true" camera="" position="" rotation="0 0 0" wasd-controls=""></a-camera>
+            <a-sky id="g-pano-sky" src="AuntEdiths.jpg" geometry="" scale="">
+        <!-- attached inner pano -->
+        <a-sky id="g-pano-inner-sky" src="assets/AuntEdithsHistorical360.jpg" rotation="0 540 0" opacity="0.5" radius="4000" scale="-1 1 -1" visible="true" material="color:#FFF;side:back;shader:flat;npot:true;src:https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/grocery-still-overlay.jpg;opacity:0.000288484664021352" geometry="">
+          <a-animation attribute="material.opacity" direction="alternate" delay="1000" dur="4000" repeat="indefinite" from="1" to="0"></a-animation>
+        </a-sky>
+      <a-animation id="g-animation" attribute="rotation" fill="forwards" easing="linear" dur="128000" repeat="indefinite" from="0 600 0" to="0 960 0"></a-animation></a-sky>
+    <canvas class="a-canvas a-grab-cursor" data-aframe-canvas="true" width="731" height="969"></canvas><a-entity light="" data-aframe-default-light="" aframe-injected=""></a-entity><a-entity light="" position="" data-aframe-default-light="" aframe-injected=""></a-entity>
+        </a-scene>
+    </body>
+</html>
