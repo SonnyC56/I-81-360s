@@ -12,7 +12,7 @@
         <a-scene class="edith-pano-scene" debug="" embedded="" vr-mode-ui="enabled:false" inspector="" keyboard-shortcuts="" screenshot="">
     
             <a-camera id="edith-pano-camera" look-controls="reverseMouseDrag:true;reverseTouchDrag:true;enabled:true" camera="" position="" rotation="0 0 0" wasd-controls=""></a-camera>
-            <a-sky id="g-pano-sky" src="AuntEdiths.jpg" rotation="0 120 0" material="color:#FFF;side:back;shader:flat;src:AuntEdiths.jpg" geometry="" scale="">
+            <a-sky id="g-pano-sky" src="AuntEdiths.jpg" rotation="0 120 0" material="color:#FFF;side:back;npot:true;src:AuntEdiths.jpg" geometry="" scale="">
         <!-- attached inner pano -->
         <a-sky id="g-pano-inner-sky" src="assets/AuntEdithsHistorical360.jpg" rotation="0 540 0" opacity="0.5" radius="4000" scale="1 1 1" visible="true" material="color:#FFF;side:back;shader:flat;npot:true;src:AuntEdithsHistorical360.jpg;opacity:0.000288484664021352" geometry="">
           <a-animation attribute="material.opacity" direction="alternate" delay="1000" dur="4000" repeat="indefinite" from="1" to="0"></a-animation>
