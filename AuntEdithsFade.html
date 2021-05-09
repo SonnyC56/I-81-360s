@@ -10,23 +10,60 @@
 </head>
     <body>
     <div id="g-pano-box" style="visibility: visible;">
-    <a-scene class="g-pano-scene" debug="" embedded="" vr-mode-ui="enabled:false" inspector="" keyboard-shortcuts="" screenshot="">
+  <a-scene class="g-pano-scene fullscreen" debug="" vr-mode-ui="enabled:false" inspector="" keyboard-shortcuts="" screenshot="" aframe-inspector-removed-embedded="undefined"><canvas class="a-canvas" data-aframe-canvas="true" width="450" height="225"></canvas>
+
+      <a-assets id="g-pano-asset-loader">
+        
+
+        
+            <!--<img id="grocery-still" src="https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/grocery-still.jpg">-->
+            
+              <!--<img id="grocery-still-overlay" src="https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/grocery-still-overlay.jpg">-->
+            
+     
+        
+        
+            <!--<img id="courtroom-still" src="https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/courtroom-still.jpg">-->
+            
+              <!--<img id="courtroom-still-overlay" src="https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/courtroom-still-overlay.jpg">-->
+            
+       
+        
+        
+        
+            <!--<img id="river-still" src="https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/river-still.jpg">-->
+            
+          
+      
+ 
+        
+            <!--<img id="barn-still" src="https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/barn-still.jpg">-->
+            
+              <!--<img id="barn-still-overlay" src="https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/barn-still-overlay.jpg">-->
+            
 
 
-      <a-camera id="g-pano-camera" look-controls="reverseMouseDrag:true;reverseTouchDrag:true;enabled:true" camera="" position="" rotation="0 0 0" wasd-controls=""></a-camera>
-      <a-sky id="g-pano-sky" src="AuntEdiths.jpg" rotation="0 679.6536562500296 0" material="color:#FFF;side:back;shader:flat;npot:true;src:AuntEdiths.jpg" geometry="" scale="">
+      </a-assets>
+
+      <a-camera id="g-pano-camera" look-controls="reverseMouseDrag:true;reverseTouchDrag:true" camera="" position="0 1.6 0" rotation="" wasd-controls="" data-aframe-inspector-original-camera=""></a-camera>
+      <a-sky id="g-pano-sky" src="https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/grocery-still.jpg" rotation="0 739.7606484374955 0" material="src:https://i81360s.netlify.app/auntediths.jpg" geometry="">
         
         <!-- attached inner pano -->
-        <a-sky id="g-pano-inner-sky" src="AuntEdithsHistorical360.jpg" rotation="0 540 0" opacity="0.5" radius="4000" scale="-1 1 -1" visible="true" material="color:#FFF;side:back;shader:flat;npot:true;src:AuntEdithsHistorical360.jpg;opacity:0.048152469098009805" geometry="">
+        <a-sky id="g-pano-inner-sky" src="https://static01.nyt.com/newsgraphics/2019/01/08/imr-till/8df48ff83abf1c5eacb5e0a94a724bdb481f949d/grocery-still-overlay.jpg" rotation="0 540 0" opacity="0.5" radius="4000" scale="-1 1 -1" visible="" material="src:https://i81360s.netlify.app/auntedithshistorical360.jpg;opacity:0.9979499833385891" geometry="">
           <a-animation attribute="material.opacity" direction="alternate" delay="1000" dur="4000" repeat="indefinite" from="1" to="0"></a-animation>
         </a-sky>
 
       <a-animation id="g-animation" attribute="rotation" fill="forwards" easing="linear" dur="128000" repeat="indefinite" from="0 600 0" to="0 960 0"></a-animation></a-sky>
 
-    <canvas class="a-canvas a-grab-cursor" data-aframe-canvas="true" width="1005" height="1330"></canvas><a-entity light="" data-aframe-default-light="" aframe-injected=""></a-entity><a-entity light="" position="" data-aframe-default-light="" aframe-injected=""></a-entity></a-scene>
+    </a-scene>
   </div>
     </body>
 </html>
+
+
+
+
+
 
 
 
