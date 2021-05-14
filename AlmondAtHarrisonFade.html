@@ -10,13 +10,13 @@
 </head>
     <body>
     <div id="g-pano-box" style="visibility: visible;">
-  <a-scene class="g-pano-scene fullscreen" debug="" vr-mode-ui="enabled:false" inspector="" keyboard-shortcuts="" screenshot="" aframe-inspector-removed-embedded="undefined"><canvas class="a-canvas" data-aframe-canvas="true" width="450" height="225"></canvas>
+  <a-scene loading-screen="dotsColor: red; backgroundColor: #ffffff00" class="g-pano-scene fullscreen" debug="" vr-mode-ui="enabled:false" inspector="" keyboard-shortcuts="" screenshot="" aframe-inspector-removed-embedded="undefined"><canvas class="a-canvas" data-aframe-canvas="true" width="450" height="225"></canvas>
         
       
         
       <a-camera id="360camera" look-controls="reverseMouseDrag:false;reverseTouchDrag:true;" camera="" position="0 1.6 0" rotation="" wasd-controls="" data-aframe-inspector-original-camera=""></a-camera>
 
-      <a-sky id="g-pano-sky" src="src:https://i81360s.netlify.app/AlmondAtHarrison.jpg" rotation="0 739.7606484374955 0" material="src:https://i81360s.netlify.app/AlmondAtHarrison.jpg" geometry="">
+      <a-sky id="g-pano-sky" src="src:https://i81360s.netlify.app/AlmondAtHarrison.jpg" rotation="0 30 0" material="src:https://i81360s.netlify.app/AlmondAtHarrison.jpg" geometry="">
         
         <!-- attached inner pano -->
         <a-sky id="g-pano-inner-sky" src="https://i81360s.netlify.app/AlmondAtHarrisonFuture.jpg;opacity:0.9979499833385891" rotation="0 540 0" opacity="0.5" radius="4000" scale="-1 1 -1" visible="" material="src:https://i81360s.netlify.app/AlmondAtHarrisonFuture.jpg;opacity:0.9979499833385891" geometry="">
