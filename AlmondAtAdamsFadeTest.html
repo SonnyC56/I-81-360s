@@ -10,7 +10,7 @@
 </head>
     <body>
     <div id="g-pano-box" style="visibility: visible;">
-  <a-scene loading-screen="dotsColor: red; backgroundColor: #ffffff00" class="g-pano-scene fullscreen" debug="" vr-mode-ui="enabled:false" inspector="" keyboard-shortcuts="" screenshot="" aframe-inspector-removed-embedded="undefined"><canvas class="a-canvas" data-aframe-canvas="true" width="450" height="225"></canvas>
+  <a-scene loading-screen="dotsColor: red; backgroundColor: #ffffff00" class="g-pano-scene fullscreen" debug="" vr-mode-ui="enabled:true" inspector="" keyboard-shortcuts="" screenshot="" aframe-inspector-removed-embedded="undefined"><canvas class="a-canvas" data-aframe-canvas="true" width="450" height="225"></canvas>
 
   
 
@@ -19,8 +19,8 @@
       <a-sky id="g-pano-sky" src="src:https://i81360s.netlify.app/AlmondAtAdams.jpg" rotation="0 120 0" material="src:https://i81360s.netlify.app/AlmondAtAdams.jpg" geometry="">
         
         <!-- attached inner pano -->
-        <a-sky id="g-pano-inner-sky" src="https://i81360s.netlify.app/AlmondAtAdamsFuture.jpg;opacity:0.9979499833385891" rotation="0 540 0" opacity="0.5" radius="4000" scale="-1 1 -1" visible="" material="src:https://i81360s.netlify.app/AlmondAtAdamsFuture.jpg;opacity:0.9979499833385891" geometry="">
-          animation= "property: components.material.opacity; dir: alternate; delay: 1000; dur: 4000; loop from: 1; to: 0;"></a-animation>
+        <a-sky id="g-pano-inner-sky" src="https://i81360s.netlify.app/AlmondAtAdamsFuture.jpg;opacity:0.9979499833385891" rotation="0 540 0" opacity="0.5" radius="4000" scale="-1 1 -1" visible="" material="src:https://i81360s.netlify.app/AlmondAtAdamsFuture.jpg;opacity:0.9979499833385891" geometry=""  animation= "property: components.material.opacity; dir: alternate; delay: 1000; dur: 4000; loop from: 1; to: 0;">
+         
         </a-sky>
 
      </a-sky>
