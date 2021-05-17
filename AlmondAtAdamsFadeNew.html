@@ -7,25 +7,20 @@
 	<meta aframe-injected="" name="mobile-web-app-capable" content="yes">
 	<meta aframe-injected="" name="theme-color" content="black">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.js" integrity="sha512-E71Id1i5xBlc2EftiH5s+mmpPbNJ2+XiCZy+iVb91pHKkCZmxS9WcGHpg/tyAp0mFo/9CuNFg1ey5T03kgP1bA==" crossorigin="anonymous"></script>
+
+<script src="https://rawgit.com/urish/aframe-camera-events/master/index.js"></script>
 </head>
     <body>
     <div id="g-pano-box" style="visibility: visible;">
 
 
 
-<script>
-        var toggleEl = document.querySelector('a-sky')
-        toggleEl.addEventListener('click', function (evt) {
-            toggleEl.emit("clicked"); 
-        });
-    </script>
-
   <a-scene loading-screen="dotsColor: red; backgroundColor: #ffffff00" class="g-pano-scene fullscreen" debug="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false" cursor="rayOrigin:mouse">
 
   
     
 
-      <a-sky id="g-pano-sky" src="src:https://i81360s.netlify.app/AlmondAtAdams.jpg" rotation="0 120 0" radius="5000" material="src:https://i81360s.netlify.app/AlmondAtAdams.jpg" geometry="" animation="property: rotation; from: 0 100 0; to: 0 140 0; dur: 10000; dir: alternate; loop: true; easing: linear; pauseEvents: clicked;" >
+      <a-sky id="g-pano-sky" rotation-listener src="src:https://i81360s.netlify.app/AlmondAtAdams.jpg" rotation="0 120 0" radius="5000" material="src:https://i81360s.netlify.app/AlmondAtAdams.jpg" geometry="" animation="property: rotation; from: 0 100 0; to: 0 140 0; dur: 10000; dir: alternate; loop: true; easing: linear; pauseEvents: rotationChanged;" >
         
         <!-- attached inner pano -->
         <a-sky id="g-pano-inner-sky" src="https://i81360s.netlify.app/AlmondAtAdamsFuture.jpg;opacity:0.0" rotation="0 540 0" opacity="0.5" radius="4000" scale="-1 1 -1" visible="true" material="src:https://i81360s.netlify.app/AlmondAtAdamsFuture.jpg;opacity:0.0;transparent:true;" geometry=""  animation="property: material.opacity; from: 0.0; to: 1.0; dur: 5000; delay: 2000; dir: alternate; loop: true; easing: easeInOutElastic;">
