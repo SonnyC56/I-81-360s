@@ -10,6 +10,14 @@
 </head>
     <body>
     <div id="g-pano-box" style="visibility: visible;">
+
+<script>
+        var toggleEl = document.querySelector('#g-pano-inner-sky')
+        toggleEl.addEventListener('click', function (evt) {
+            toggleEl.emit("clicked"); 
+        });
+    </script>
+
   <a-scene loading-screen="dotsColor: red; backgroundColor: #ffffff00" class="g-pano-scene fullscreen" debug="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false" cursor="rayOrigin:mouse">
 
   
