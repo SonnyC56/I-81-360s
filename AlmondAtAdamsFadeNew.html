@@ -12,17 +12,8 @@
     <body>
     <div id="g-pano-box" style="visibility: visible;">
 
-<script>
-AFRAME.registerComponent('cursor-listener', {
-    init: function () {
-         this.el.addEventListener('click', function (evt) {
-        console.log('I was clicked at: ', evt.detail.intersection.point);
-      });
-    }
-  });
-</script>
 
-  <a-scene loading-screen="dotsColor: red; backgroundColor: #ffffff00" class="g-pano-scene fullscreen" debug="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false" cursor="rayOrigin: mouse" raycaster="maxDistance: 6000; objects: a-sky">
+  <a-scene loading-screen="dotsColor: red; backgroundColor: #ffffff00" class="g-pano-scene fullscreen" debug="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false" cursor="rayOrigin: mouse" raycaster="maxDistance: 6000; objects: a-canvas a-grab-cursor">
 
   
     
@@ -39,7 +30,7 @@ AFRAME.registerComponent('cursor-listener', {
 
 </a-camera>
 
-<canvas class="a-canvas a-grab-cursor" data-aframe-canvas="true" style="" cursor-listener></canvas>
+<canvas class="a-canvas a-grab-cursor" data-aframe-canvas="true" style=""></canvas>
 
     </a-scene>
 
