@@ -11,12 +11,7 @@
     <body>
     <div id="g-pano-box" style="visibility: visible;">
 
-<script>
-        var toggleEl = document.querySelector('#canvas')
-        toggleEl.addEventListener('click', function (evt) {
-            toggleEl.emit("clicked"); 
-        });
-    </script>
+
 
   <a-scene loading-screen="dotsColor: red; backgroundColor: #ffffff00" class="g-pano-scene fullscreen" debug="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false" cursor="rayOrigin:mouse">  <canvas id="canvas"></canvas>
 
@@ -34,6 +29,13 @@
   <a-camera id="g-pano-camera" look-controls="magicWindowTrackingEnabled: false;reverseMouseDrag:false;reverseTouchDrag:false;" camera="" position="0 1.6 0" rotation="" wasd-controls="">
 
 </a-camera>
+
+<script>
+        var toggleEl = document.querySelector('#canvas')
+        toggleEl.addEventListener('click', function (evt) {
+            toggleEl.emit("clicked"); 
+        });
+    </script>
     </a-scene>
 
   </div>
